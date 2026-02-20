@@ -307,7 +307,7 @@ export function Addictions() {
                         style={{ willChange: "transform" }}
                     >
                         <Image
-                            src="/balloon_1.webp"
+                            src="balloon_1.webp"
                             alt="Clash Royale Balloon"
                             width={160}
                             height={160}
@@ -338,7 +338,7 @@ export function Addictions() {
                         style={{ willChange: "transform" }}
                     >
                         <Image
-                            src="/antigravity.png"
+                            src="antigravity.png"
                             alt="Antigravity"
                             width={160}
                             height={160}
@@ -368,7 +368,7 @@ export function Addictions() {
                         style={{ willChange: "transform" }}
                     >
                         <Image
-                            src="/chatgpt.png"
+                            src="chatgpt.png"
                             alt="ChatGPT"
                             width={160}
                             height={160}
