@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
+import Image from "next/image";
 export function Contact() {
     const containerRef = useRef<HTMLDivElement>(null);
     const formRef = useRef<HTMLFormElement>(null);
@@ -42,6 +42,7 @@ export function Contact() {
 
     return (
         <section id="contact" ref={containerRef} className="py-12 md:py-20 bg-muted/50">
+
             <div className="container px-4 md:px-6 max-w-4xl mx-auto">
                 <h2 ref={headingRef} className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">
                     Get in Touch

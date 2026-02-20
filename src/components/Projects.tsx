@@ -26,6 +26,18 @@ const projects = [
         tags: ["HTML5", "Alpine.js", "Tailwind", "SEO"],
         link: "#",
     },
+    {
+        title: "Evertest",
+        description: "Allows users to record real-time interactions—clicks, inputs, and navigations—directly within a browser extension without writing code.",
+        tags: ["React.js", "TypeScript", "Tailwind", "Shadcn UI", 'Supabase'],
+        link: "#",
+    },
+    {
+        title: "Tapp.ai",
+        description: "Learners receive personalized guidance from experienced developers to help them understand complex concepts and navigate their chosen career paths.",
+        tags: ["Next.js", "TypeScript", "Tailwind", "Shadcn UI"],
+        link: "#",
+    },
 ];
 
 export function Projects() {
