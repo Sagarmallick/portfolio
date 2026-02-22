@@ -62,10 +62,16 @@ export function Contact() {
                 body: JSON.stringify({ name, email, message }),
             });
 
-            const data = await res.json();
+            let data: Record<string, unknown> = {};
+            try {
+                const text = await res.text();
+                if (text) data = JSON.parse(text);
+            } catch {
+                // Response wasn't valid JSON
+            }
 
             if (!res.ok) {
-                throw new Error(data.error || "Something went wrong");
+                throw new Error((data.error as string) || `Server error (${res.status})`);
             }
 
             setStatus("success");
